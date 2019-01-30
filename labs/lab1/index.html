@@ -15,19 +15,26 @@ in html
         
         <meta charset="utf-8" />
         <title> Joseph Barker: Personal Website </title>
-        
+        <link href="css/styles.css" rel="stylesheet" type="text/css" />
+     <style>
+            body {
+                    background-color: #000066 !important;
+            }
+     </style>
+     
     </head>
 <!-- closing head -->
 
     <!-- This is the body -->
     <!-- This is where we place the content of our website -->
-    <body>
+    <body style="background-color:black; color:white">
         <header> 
             <h1> Joseph Barker </h1>
         </header>
+        
         <nav>
              <hr width="50%" />
-             <a href="index.html">Home</a>
+             <a href="index.html"><u>Home</u></a>
              <a href="about.html">About</a>
              <a href="contact.html">Contact</a>
         </nav>
@@ -36,11 +43,11 @@ in html
        
        <main>
            
-           <figure>
-               <img src="img/img.jpg" alt= "Juan Doe Picture" />
+           <figure id='me'>
+               <img src="img/windows_xp.jpg" alt= "Rolling green hills with blue sky" />
            </figure>
            
-           <div>
+           <div id="welcomeText">
                Hello! <br />
                <p>Thank you for visiting my professional portfolio website.</p>
                
@@ -48,7 +55,7 @@ in html
                
                <p>Feel free to contact me!</p>
                
-               <br /><br />
+               <br><br />
                
                <em>"With ordinary talent and extraordinary
                <strong>perseverance</strong>, all things are attainable "<em><br />
@@ -60,14 +67,12 @@ in html
         
         <!-- This is the footer -->
         <!-- The footer goes inside the body but not always -->
-        <hr width="50%">
-        
-        <footer>
-        
-        &copy; 2019. Joseph Barker - CST 336 Internet Programming <br />
-        <strong>Disclaimer:</strong> The content of this page is fake. It's only for educatiol purposes.</strong>
-        <br>
-        <img src="../../img/Round-CSUMB-logo.png" alt = "CSUMB logo" />
+        <footer id='foot'>
+            <hr width="50%">
+            &copy; 2019. Joseph Barker - CST 336 Internet Programming <br />
+            <strong>Disclaimer:</strong> The content of this page is fake. It's only for educatiol purposes.</strong>
+            <br>
+            <img src="../../img/CSUMB_Logo_White.png" alt = "CSUMB Logo" />
             
         </footer>
         <!-- closing footer -->
