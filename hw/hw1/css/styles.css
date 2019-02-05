@@ -1,0 +1,96 @@
+body{
+    background-color:LightGrey;
+    color:black;
+    }
+
+header, nav, manin, #content{
+        width: 1400px; /*1400 */
+        margin: 0 auto; 
+        text-align: center;
+        /*border:1px solid red; */
+}
+
+#content_header{
+    text-align: left;
+}
+#test{
+    text-align: left;
+}
+h1{
+    font-family: 'Orbitron', sans-serif;
+    font-size: 4em;
+    margin-bottom: 0px;
+}
+
+nav a { /* links within "nav" container */
+    padding:15px;
+    padding-bottom:4px;
+    font-size: 1.8em;
+    text-decoration: none;  /* removes underline */
+    color: white;           /* by default, links are blue */
+}
+
+nav a:hover { /*pseudo class*/
+    border-bottom:2px orange solid;
+    font-size: 2em;
+    transition: .9s; /* transition effect */
+}
+
+#index_graphic{
+    float:left;
+    -moz-box-shadow: inset -5px -5px 5px 5px #888;
+    -webkit-box-shadow: inset -5px -5px 5px 5px#888;
+    box-shadow: inset -5px -5px 5px 5px #888;
+}
+
+#CPU_graphic{
+    float:left;
+    -webkit-transform: scaleX(-1);
+    -moz-box-shadow: inset -5px -5px 5px 5px #888;
+    -webkit-box-shadow: inset -5px -5px 5px 5px#888;
+    box-shadow: inset -5px -5px 5px 5px #888;
+}
+
+#RAM_graphic{
+    float:left;
+    -moz-box-shadow: inset -5px -5px 5px 5px #888;
+    -webkit-box-shadow: inset -5px -5px 5px 5px#888;
+    box-shadow: inset -5px -5px 5px 5px #888;
+}
+
+#HDD_graphic{
+    float:left;
+    -moz-box-shadow: inset -5px -5px 5px 5px #888;
+    -webkit-box-shadow: inset -5px -5px 5px 5px#888;
+    box-shadow: inset -5px -5px 5px 5px #888;
+}
+
+#welcomeText{
+    float:left;
+     text-align: left;
+}
+
+#CPU_Text{
+        width: 1400px;
+        margin: 0 auto; 
+        text-align: left;
+}
+
+#RAM_Text{
+        width: 1400px;
+        margin: 0 auto; 
+        text-align: left;
+}
+
+#HDD_Text{
+        width: 1400px;
+        margin: 0 auto; 
+        text-align: left;
+}
+
+footer{
+    clear: left;
+    text-align: center;
+    /*color: red; */
+    font-size: 12px;
+}

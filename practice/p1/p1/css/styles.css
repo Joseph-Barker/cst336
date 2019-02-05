@@ -1,0 +1,34 @@
+.cell {
+    width:400px;
+    height:300px;
+    color:springgreen;
+}
+.cell:hover {
+    transform:scale(1.25);
+    transition: .9s; /* transition effect */
+}
+#row {
+    display:flex;
+    justify-content:center;
+    margin:5px;
+}
+#spring {
+    border-top-left-radius:25px;
+}
+#summer {
+    border-top-right-radius:25px;
+}
+#fall {
+    border-bottom-left-radius:25px;
+}
+#winter {
+    border-bottom-right-radius:25px;
+}
+body {
+    background-color:black;
+    color:honeydew;
+}
+header, main {
+    text-align:center;
+    font-family:'Open Sans', sans-serif;
+}
