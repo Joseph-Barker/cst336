@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+        <head>
+            <title> JS review</title>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script>
+            function $(id){
+                return document.getElementById(id)
+            }
+            function doMagic(){
+                //alert("it's working!");
+                //document.getElementById("catImage").src = "img/now_you_dont.png"
+                $("catImage").src = "img/now_you_dont.png"
+                document.getElementById("message").innerHTML = "Now you don't!";
+               // document.getElementById("message").style.color = "red";
+                $("message").style.color = "red";
+                
+                document.getElementById("reappearBtn").style.display ="inline";
+                document.getElementById("doMagicBtn").style.display = "none";
+            }
+            
+            function reappear(){
+                //document.getElementById("catImage").src = "img/now_you_see_me.png";
+                $("catImage").src = "img/now_you_see_me.png";
+                document.getElementById("message").innerHTML = "Now you see me..";
+                document.getElementById("message").style.color = "black";
+                
+                document.getElementById("doMagicBtn").style.display ="inline";
+                document.getElementById("reappearBtn").style.display = "none";
+            }
+        
+            ///function 
+        </script>
+        <style>
+            
+            #reappearBtn{
+                display: none;
+            }
+        </style>
+        </head>
+        <body>
+            
+        <img id="catImage" src="img/now_you_see_me.png" > <br>
+        <span id="message">Now you see me..</span>
+        <br>
+        <button id= "doMagicBtn" onclick = "doMagic()" > Do Magic! </button>
+        <button id = "reappearBtn" onclick = "reappear()" > Bring it back!</button>
+        </body>
+</html>
