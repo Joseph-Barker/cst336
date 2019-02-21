@@ -1,0 +1,32 @@
+#row {
+    display:flex;
+    margin:0px auto;
+}
+.cell {
+    width:300px;
+    height:200px;
+}
+.scd {
+    background-color:#002a4e;
+    font-size:2.2em;
+    color:white;
+    line-height: 100px;
+}
+.cell a {
+    color:#4c6b83;
+}
+.minor a{
+  color:#4c6b83;  
+}
+body{
+    font-family: 'Hind', sans-serif;
+}
+h2 {
+    font-size: 1.7em;
+}
+.abc {
+    padding-left: 20px;
+}
+h1 {
+    padding-left: 20px;
+}

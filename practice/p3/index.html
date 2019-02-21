@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Slot Machine </title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    </head>
+    <body>
+        
+        <center>
+        <h1> Slot Machine</h1>
+        <div>
+        <button id="play">Play!</button>
+        </div>
+        <div id="image1"></div>
+        <div id="image2"></div>
+        <div id="image3"></div>
+        <p id="jackpot"></p>
+        <p id="amount"></p>
+        <p id="winnings"></p>
+        </center>
+        
+        <script>
+            let imageArray = ["cherry", "grapes", "seven"];
+            let randomIndex = Math.floor(Math.random() * 3);
+            let randomImage = imageArray[randomIndex];
+            let randomIndex2 = Math.floor(Math.random() * 3);
+            let randomImage2 = imageArray[randomIndex2];
+            let randomIndex3 = Math.floor(Math.random() * 3);
+            let randomImage3 = imageArray[randomIndex3];
+            
+            let img1 = document.querySelector("#image1");
+            let img2 = document.querySelector("#image2");
+            let img3 = document.querySelector("#image3");
+            
+            let cherryWin = 100;
+            let grapeWin = 300;
+            let sevenWin = 500;
+            let totalWinnings = 0;
+            
+            var audio = new Audio('audio/jackpot.m4a');
+            
+            img1.style.display = 'none';
+            img2.style.display = 'none';
+            img3.style.display = 'none';
+            
+            function checkWin() {
+                if( randomIndex === randomIndex2 && randomIndex === randomIndex3){
+                    if(randomIndex === 0){
+                        totalWinnings += cherryWin;
+                        //amt.innerHTML("You won $" + cherryWin)
+                        $("#amount").html("You won $" + cherryWin);
+                    }
+                    else if (randomIndex === 1){
+                        totalWinnings += grapeWin;
+                        //amt.innerHTML("You won $" + grapeWin)
+                        $("#amount").html("You won $" + grapeWin);
+                    }
+                    else {
+                        totalWinnings += sevenWin;
+                        //jp.innerHTML('JACKPOT!');
+                        $("#jackpot").html("JACKPOT!");
+                        //amt.innerHTML("You won $" + sevenWin)
+                        $("#amount").html("You won $" + sevenWin);
+                        audio.play();
+                    }
+                    //wins.innerHTML("Total Winnings $" + totalWinnings);
+                    $("#winnings").html("Total Winnings $" + totalWinnings);
+                    
+                }
+                else {
+                    $("#amount").html("Try again!");
+                    $("#jackpot").html("");
+                    $("#winnings").html("Total Winnings $" + totalWinnings);
+                }
+            }
+            
+            function genImage() {
+                randomIndex = Math.floor(Math.random() * 3);
+                randomImage = imageArray[randomIndex];
+                randomIndex2 = Math.floor(Math.random() * 3);
+                randomImage2 = imageArray[randomIndex2];
+                randomIndex3 = Math.floor(Math.random() * 3);
+                randomImage3 = imageArray[randomIndex3];
+                 $("#image1").html("<img src='img/"+randomImage+".png' />");
+                $("#image2").html("<img src='img/"+randomImage2+".png' />");
+                $("#image3").html("<img src='img/"+randomImage3+".png' />");
+            }
+            
+            $("button").on("click", function(){
+                genImage();
+                img1.style.display = 'inline';
+                img2.style.display = 'inline';
+                img3.style.display = 'inline';
+                checkWin();
+            });
+            
+        </script>
+        
+    </body>
+</html>

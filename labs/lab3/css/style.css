@@ -1,0 +1,25 @@
+.jumbotron {
+    background-color:#99ccff;
+}
+
+body {
+    text-align: center;
+    background-color:#C5E6F8;
+}
+
+.correct {
+    color: green;
+    font-size: 18pt;
+}
+
+.incorrect {
+    color: red;
+    font-size: 18pt;
+}
+
+#submitButton {
+    background-color:blue;
+    color:white;
+    border-radius:25px;
+    padding:15px;
+}
