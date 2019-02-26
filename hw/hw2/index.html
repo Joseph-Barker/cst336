@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Which Soft Drink Are You Like?</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--Custom Styles-->        
+        <link rel="stylesheet" href="css/style.css">    
+    </head>
+    <body>
+    <div class="jumbotron">
+        <h1><span id = "title">"Pop" quiz: Which Soft Drink Are You Like?</span></h1>
+    </div>    
+     <!--Question 1 -->
+    <h2>1. What kind of lifestyle would you prefer?</h2>
+    <form>
+         <label class = "radio-inline">   
+            <input type="radio" name="q1" id="advt" value="Advent">Adventurous
+        </label>
+        <label class = "radio-inline">   
+            <input type="radio" name="q1" id="relx" value="Relax">Relaxed
+        </label>
+    </form>
+    <br></br>
+    <!--Question 2 -->
+    <h2>2. Are you an extrovert or an introvert?</h2>
+    <form>
+        <label class = "radio-inline"> 
+            <input type="radio" name="q2" id="extro" value="Ex">Extrovert
+        </label>   
+        <label class = "radio-inline"> 
+            <input type="radio" name="q2" id="intro" value="In">Introvert
+        </label>     
+     </form>   
+    <br></br>
+    <!--Question 3 -->
+    <h2>3. What do you like doing best with your time?</h2>
+    <select id="q3">
+            <option value="">Select One</option>
+            <option>Sports</option>
+            <option>Gaming</option>
+            <option>Traveling</option>
+            <option>Hanging out with friends</option>
+            <option>Watching Netflix</option>
+    </select>
+    <!--Question 4 -->
+    <h2></span>4. What is your favorite color?</h2>
+    <input type = "text" id="q4">
+     <!--Question 5 -->    
+    <h2></span>5. Pick any attributes you identify with.</h2>
+    <form  class = "form-inline">
+        <div class="checkbox">  
+           <label><input type="checkbox" id="Strong" value="Strong">Strong</label>
+        </div>
+        <div class="checkbox"> 
+            <label><input type="checkbox" id="Sensitive" value="Sensitive">Sensitive</label>
+        </div>    
+        <div class="checkbox">     
+            <label><input type="checkbox" id="Bubbly" value="Bubbly">Bubbly</label>
+        </div>    
+        <div class="checkbox">         
+            <label><input type="checkbox" id="Classy" value="Classy">Classy</label>
+        </div>    
+        <div class="checkbox">         
+            <label><input type="checkbox" id="Passionate" value="Passionate">Passionate</label>
+        </div>
+        <div class="checkbox"> 
+            <label><input type="checkbox" id="Intellectual" value="Intellectual">Intellectual</label>
+        </div>
+    </form>
+     <!--Question 6 -->    
+    <h2></span>6. Pick your ride of choice.</h2>
+    <figure>
+       <img src="img/jeep.png" alt="jeep" class="active" id="jeep">
+        <figcaption>Jeep</figcaption>
+    </figure>
+    <figure>        
+        <img src="img/sports_car.png" alt="sports car" class="active" id="sports car">
+        <figcaption>Sports Car</figcaption>
+    </figure>
+    <figure>        
+        <img src="img/fighter_jet.png" alt="jet" class="active" id="jet">
+        <figcaption>Fighter Jet</figcaption>
+    </figure>
+    <figure>   
+        <img src="img/prius.png" alt="prius" class="active" id="prius">     
+        <figcaption>Prius</figcaption>
+    </figure>
+    <div></div>
+    <br></br>
+    <button class = "button" id="submitButton"> Submit </button>
+    <br></br>
+    <h2 id="validSubmission"></h2>   
+    <div id="resultImg"></div>
+    <h1 width= "50%"><p id = "result"> </p></h1>
+
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+    <br></br>
+        <!-- This is the footer -->
+        <!-- The footer goes inside the body but not always -->
+        <footer>
+            <hr width= "50%">
+            &copy; 2019. Joseph Barker - CST 336 Internet Programming <br />
+            <strong>Disclaimer:</strong> The content of this page is fake. It's only for educatiol purposes.</strong>
+            <br>
+            <img src="../../img/CSUMB_Logo.jpg" alt = "CSUMB Logo" />
+           <!-- <img src="../../img/buddy_verified.png" -->
+        </footer>    
+    
+    </body>
+
+    <script>
+       /*global $*/
+
+        let q1_a1 = "Advent";
+        let q1_a2 = "Relax";
+       
+        let q2_a1 = "Ex";
+        let q2_a2 = "In";
+       
+        let q3_a1 = "Sports";
+        let q3_a2 = "Gaming";
+        let q3_a3 = "Traveling";
+        let q3_a4 = "Hanging out with friends";
+        let q3_a5 = "Watching Netflix";
+        
+        let q6_a1 = "jeep";
+        let q6_a2 = "sports car";
+        let q6_a3 = "jet";
+        let q6_a4 = "prius";
+        
+        let q6_response = "";
+       
+        let audio = new Audio("audio/opening.mp3");
+        let alert = new Audio("audio/Alert.mp3");
+       
+        $(".active").on( "click", function() {
+             $(".active").css("background","");
+             $(this).css("background", "#009CFF");
+             //alert($(this).attr("id"));
+             q6_response = $(this).attr("id");
+        });       
+       
+        function isFormValid(){
+            let isValid = true;
+            if ($("#q3").val() == "") {
+                isValid = false;
+                alert.play();
+                $("#validSubmission").html("Please answer question three!");
+            }
+            return isValid;
+        }
+        
+        $("#submitButton").on( "click", function() {
+            $("#validSubmission").html("");
+            $("#result").html("");
+            $("#resultImg").html("");           
+            
+            if (!isFormValid()) {   //isFormValid == false
+                return;
+            }
+            
+            let dew = 0;
+            let drPep = 0;
+            let orange = 0;
+            let sprite = 0;
+            let RB = 0;
+            
+            let q1_response = $("input[name=q1]:checked").val();
+            let q2_response = $("input[name=q2]:checked").val();
+            let q3_response = $("#q3").val();
+            let q4_response = $("#q4").val().toLowerCase();
+            
+            audio.play();
+            
+                //Question 1
+            if (q1_response == q1_a1) {
+                orange += 3;
+                RB += 8;
+                dew += 5;
+                sprite +=3;
+                drPep += 0;
+            }else if (q1_response == q1_a2) {
+                orange += 5;
+                RB += 0;
+                dew += 0;
+                sprite +=0;
+                drPep += 5;
+            }
+                //Question 2
+            if (q2_response == q2_a1) {
+                orange += 8;
+                RB += 0;
+                dew += 0;
+                sprite +=0;
+                drPep += 0;
+            }else if (q2_response == q2_a2) {
+                orange += 0;
+                RB += 0;
+                dew += 0;
+                sprite +=0;
+                drPep += 8;
+            }            
+                //Question 3
+            if (q3_response == q3_a1) { //sports
+                orange += 3;
+                RB += 3;
+                dew += 3;
+                sprite +=8;
+                drPep += 0;
+            }else if (q3_response == q3_a2) { //gaming
+                orange += 0;
+                RB += 0;
+                dew += 8;
+                sprite +=3;
+                drPep += 5;
+            }else if (q3_response == q3_a3) {//traveling
+                orange += 5;
+                RB += 5;
+                dew += 3;
+                sprite +=5;
+                drPep += 0;
+            }else if (q3_response == q3_a4) { //hanging out with friends
+                orange += 8;
+                RB += 5;
+                dew += 5;
+                sprite +=5;
+                drPep += 0;
+            }else if (q3_response == q3_a5) { // watxhing netflix
+                orange += 0;
+                RB += 0;
+                dew += 0;
+                sprite +=0;
+                drPep += 8;
+            }           
+                 //Question 4
+            if(q4_response == "red" || q4_response == "black") { 
+                orange += 0;
+                RB += 2;
+                dew += 3;
+                sprite +=3;
+                drPep += 0;            
+            }else if (q4_response == "green" || q4_response == "orange") {
+                orange += 5;
+                RB += 2;
+                dew += 3;
+                sprite +=3;
+                drPep += 0; 
+            }else if (q4_response == "yellow" || q4_response == "brown" || q4_response == "white") {
+                orange += 0;
+                RB += 0;
+                dew += 0;
+                sprite +=0;
+                drPep += 5;             
+            }else if (q4_response == "blue") {
+                orange += 0;
+                RB += 3;
+                dew += 0;
+                sprite +=3;
+                drPep += 5;             
+            }
+                // Question 5
+            if ($("#Strong").is(":checked")){
+                orange += 3;
+                RB += 4;
+                dew += 3;
+                sprite +=5;
+                drPep += 0; 
+            }            
+            if ($("#Sensitive").is(":checked")){
+                orange += 5;
+                RB += 0;
+                dew += 0;
+                sprite +=2;
+                drPep += 3;
+            }             
+            if ($("#Bubbly").is(":checked")){
+                orange += 5;
+                RB += 2;
+                dew += 3;
+                sprite +=2;
+                drPep += 0;
+            }             
+            if ($("#Classy").is(":checked")){
+                orange += 3;
+                RB += 2;
+                dew += 3;
+                sprite +=5;
+                drPep += 2;
+            }
+            if ($("#Passionate").is(":checked")){
+                orange += 3;
+                RB += 5;
+                dew += 3;
+                sprite +=3;
+                drPep += 2;
+            }
+            if ($("#Intellectual").is(":checked")){
+                orange += 0;
+                RB += 3;
+                dew += 0;
+                sprite +=1;
+                drPep += 5;
+            }
+                // Question 6
+            if (q6_response == q6_a1) {
+                orange += 2;
+                RB += 5;
+                dew += 3;
+                sprite +=2;
+                drPep += 0;                           
+                
+            } else if (q6_response == q6_a2) {
+                orange += 2;
+                RB += 4;
+                dew += 3;
+                sprite += 5;
+                drPep += 0;                
+            } else if (q6_response == q6_a3) {
+                orange += 0;
+                RB += 4;
+                dew += 5;
+                sprite += 3;
+                drPep += 0;                
+            } else if (q6_response == q6_a4) {
+                orange += 4;
+                RB += 0;
+                dew += 0;
+                sprite += 0;
+                drPep += 5;                
+            }           
+            
+            let tallyArray = [orange, RB, dew, sprite, drPep];
+            let greatest = tallyArray[0];
+            let i = 1;
+            for(i; i < tallyArray.length; i++) {
+                if( greatest < tallyArray[i]) {
+                    greatest = tallyArray[i];
+                }
+            }
+            
+                //Results
+            if(greatest == orange){
+                $("#result").html("Cactus Cooler, you are generally a happy person looking at the bright side of things.");                
+                $("#resultImg").html("<img src ='img/CC.png' alt='Cactus Cooler Logo'>");
+            }else if (greatest == RB) {
+                $("#result").html("Root Beer, you are a little more hardcore than most, and enjoy tackling difficult challenges.");
+                $("#resultImg").html("<img src ='img/RB.png' alt='Root Beer Logo'>");                
+            }else if (greatest == dew) {
+                $("#result").html("Mountain Dew, you are always very energetic and looking for something exciting to do!");                
+                $("#resultImg").html("<img src ='img/dew.png' alt='Mountain Dew Logo'>");
+            }else if (greatest == sprite) {
+                $("#result").html("Sprite, you are a very athletic person and enjoy thigs like swimming and running." );                
+                $("#resultImg").html("<img src ='img/spri.png' alt='Sprite Logo'>");
+            }else if (greatest == drPep) {
+                $("#result").html("Dr. Pepper, you enjoy sitting back and pondering life but every once in a while you do something differen (Like check the mailbox.)");                
+                $("#resultImg").html("<img src ='img/drP.png' alt='Dr. Pepper Logo'>");
+                
+            }
+               let readout = "tally:" + tallyArray + " greatest: " + greatest ;
+                console.log(readout);
+                        
+        });
+    </script>
+
+</html>

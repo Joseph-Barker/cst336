@@ -1,0 +1,115 @@
+<html>
+<head>
+    <title>Shopping Cart</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <h1 class="jumbotron"> Spring Break Shopping  </h1>
+
+    <table>
+    <tr>
+        <th>Product</th>
+        <th>Unit <br> Price</th>
+        <th> Quantity </th>
+        <th>Total</th>
+    </tr>
+    <tr>
+        <td>Microfiber Beach Towel</td>
+        <td>$30</td>
+        <td><input type="text" id="towQuant" size="5"></td>
+        <td id = "towTotal"></td>
+    </tr>
+
+   <tr>
+        <td>Sunscreen 100SPF, 120ml</td>
+        <td>$10</td>
+        <td><input type="text" id="sunscrQuant" size="5"></td>
+        <td id = "sunscrTotal"></td>
+    </tr>    
+    
+    <tr>
+        <td>Ipanema Flip-flop Sandals </td>
+        <td>$20</td>
+        <td><input type="text" id="sandQuant" size="5"></td>
+        <td id="sandTotal"></td>
+    </tr>
+
+   <tr>
+        <td>Shipping</td>
+        <td></td>
+        <td></td>
+        <td id="shipping"></td>
+    </tr>    
+        
+    <tr>
+        <td>Subtotal</td>
+        <td></td>
+        <td></td>
+        <td id="subtotal"></td>
+    </tr>             
+        
+    <tr>
+        <td>Tax (10%)</td>
+        <td></td>
+        <td></td>
+        <td id="tax"></td>
+    </tr>
+    
+    <tr>
+        <td>Total</td>
+        <td></td>
+        <td></td>
+        <td id="total"></td>
+    </tr>
+       
+    </table>
+    
+    <h3>Shipping & Handling</h3>
+    <select id="shipping">
+        <option value="">Select one</option>
+        <option value="15.00">Next Day Delivery: $15.00</option>
+        <option value="10.00">Three Day Delivery: $10.00</option>
+        <option value="5.00">Regular (5-8 Days): $5</option>
+    </select>
+    <br><br>
+        
+    <span>I accept the terms of this purchase.</span>
+    <br> 
+    
+    <button>"CONFIRM PURCHASE"</button>
+
+</body>
+<script>
+/* global $ */
+let towelPrice = 30.00;
+let towelTotal = 0.00;
+let suncreenPrice = 10.00;
+let sunscreenTotal = 0.00;
+let sandalsPrice = 20.00;
+let sandalsTotal = 0.00;
+let shippingTotal = 0.00;
+let subtotal = 0.00;
+let tax = 0.00;
+
+    $("#towQuant").change(function() {
+//console.log(parseFloat($("#towQuant").val()))
+   towelTotal = towelPrice * parseFloat($("#towQuant").val());
+   $("#towTotal").html("$" + towelTotal);
+    });
+    
+    $("#sunscrQuant").change(function() {
+       sunscreenTotal = suncreenPrice * parseFloat($("#sunscrQuant").val());
+       $("#sunscrTotal").html("$" + sunscreenTotal);
+    });
+    
+       $("#sandQuant").change(function() {
+   sandalsTotal = sandalsPrice * parseFloat($("#sandQuant").val());
+   $("#sandTotal").html("$" + sandalsTotal);
+       });
+       
+</script>
+</html>

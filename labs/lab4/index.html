@@ -8,6 +8,37 @@
     
     $(document).ready( function(){
         
+        $("#state").on("change", function() {
+            //alert($("#state").val());
+            
+            $.ajax({
+
+                type: "GET",
+                url: "http://itcdland.csumb.edu/~milara/ajax/countyList.php",
+                dataType: "json",
+                data: { "state": $("#state").val() },
+                success: function(data,status) {
+                    
+                  //alert(data[0].county);
+                  $("#county").html("<option> Select One </option>");
+                  for (let i=0; i < data.length; i++){
+                      
+                      $("#county").append("<option>" + data[i].county + "</option>");
+                      
+                  }
+                  
+                
+                },
+                complete: function(data,status) { //optional, used for debugging purposes
+                //alert(status);
+                }
+                
+            });//ajax
+            
+            
+        });
+        
+        
         $("#zipCode").on("change", function(){
             
             //alert(  $("#zipCode").val()  );
@@ -19,11 +50,18 @@
                 data: { "zip": $("#zipCode").val() },
                 success: function(data,status) {
                   //alert(data.city);
-                  $("#city").html(data.city);
-                
+                 if (data != ""){
+                    $("#badZip").html("");
+                    $("#city").html(data.city);
+                    $("#latitude").html(data.latitude);
+                    $("#longitude").html(data.longitude);
+                 }else{
+                     //alert("fail")
+                      $("#badZip").html(" Invalid zip code");
+                 }
                 },
                 complete: function(data,status) { //optional, used for debugging purposes
-                //alert(status);
+                  // alert(status);
                 }
                 
             });//ajax
@@ -48,15 +86,23 @@
         Last Name: <input type="text"><br> 
         Email: <input type="text"><br> 
         Phone Number:<input type="text"><br><br>
-        Zip Code: <input type="text" id="zipCode"><br>
+        Zip Code: <input type="text" id="zipCode"><span id = "badZip"></span><br>
         City: <span id="city"></span>
         <br>
-        Latitude: 
+        Latitude: <span id="latitude"></span>
         <br>
-        Longitude:
+        Longitude: <span id="longitude"></span>
         <br><br>
-        State: <input type="text"><br>
-        Select a County: <select></select><br>
+        State: 
+        <select id="state">
+           <option> Select One </option> 
+           <option value="ca"> California </option>
+           <option value="ny"> New York </option>
+           <option value="tx"> Texas </option>
+        </select>
+        <br>
+        
+        Select a County: <select id="county"></select><br>
         
         Desired Username: <input type="text"><br>
         Password: <input type="password"><br>
