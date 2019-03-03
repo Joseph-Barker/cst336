@@ -2,12 +2,21 @@
 <html>
 <head>
 <title> Sign Up Page </title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="css/styles.css">
 
 <script>
-    
+    /*global $*/
     $(document).ready( function(){
         
+        let nameGood = false;
+        let passGood = false;
+        let passMatch = false;
         $("#state").on("change", function() {
             //alert($("#state").val());
             
@@ -20,22 +29,18 @@
                 success: function(data,status) {
                     
                   //alert(data[0].county);
-                  $("#county").html("<option> Select One </option>");
+                  $("#county").html("<option> Select One </option>"); //clear data from pre options
                   for (let i=0; i < data.length; i++){
                       
                       $("#county").append("<option>" + data[i].county + "</option>");
                       
                   }
-                  
-                
                 },
                 complete: function(data,status) { //optional, used for debugging purposes
                 //alert(status);
                 }
                 
             });//ajax
-            
-            
         });
         
         
@@ -57,7 +62,10 @@
                     $("#longitude").html(data.longitude);
                  }else{
                      //alert("fail")
-                      $("#badZip").html(" Invalid zip code");
+                    $("#city").html("");
+                    $("#latitude").html("");
+                    $("#longitude").html("");
+                    $("#badZip").html(" Invalid zip code");
                  }
                 },
                 complete: function(data,status) { //optional, used for debugging purposes
@@ -69,6 +77,108 @@
             
         });//zipCode
         
+        
+        $("#username").on("change", function() {
+            //alert(  $("#username").val()  );
+            let nameInput = $("#username").val();
+            $.ajax({
+                type: "GET",
+                url: "http://myspace.csumb.edu/~milara/ajax/username/usernameLookup.php?",
+                dataType: "json",
+                data: {"username": $("#username").val()},
+                success: function(data,status) {
+                //alert(data.available);
+                
+                if(data.available == "true" && nameInput.length >= 1 ) {
+                    $("#nameFeedback").html(" Username is available");
+                    $("#nameFeedback").attr("class", "valid");
+                    nameGood = true;
+                }else{
+                    $("#nameFeedback").html(" Username is unavailable");
+                    $("#nameFeedback").attr("class", "invalid");                
+                    nameGood = false;
+                    if(nameInput.length < 1){
+                        $("#nameFeedback").html(" Username is required");
+                        $("#nameFeedback").attr("class", "invalid");
+                    }
+                    
+                }
+            },
+            complete: function(data,status) { //optional, used for debugging purposes
+                //alert(status);
+            }
+
+            });//ajax
+        });//username
+    
+        $("#checkPassword1").on("change", function() {
+            let input = $("#checkPassword1").val();
+            if (input.length >= 6) {
+                $("#passwordFeedback1").html(" Strong Password");              
+                $("#passwordFeedback1").attr("class", "valid");
+                passGood = true;
+            }else{
+                $("#passwordFeedback1").html(" Password must have at least 6 characters");
+                $("#passwordFeedback1").attr("class", "invalid");
+                passGood = false;
+            }
+            
+        });//password1
+        
+        $("#checkPassword2").on("change", function() {
+            let input1 = $("#checkPassword1").val();
+            let input2 = $("#checkPassword2").val();            
+            
+            if (input1 == input2) {
+                $("#passwordFeedback2").html(" Password confirmed");              
+                $("#passwordFeedback2").attr("class", "valid");
+                passMatch = true;
+            }else{
+                $("#passwordFeedback2").html(" Passwords do not match");
+                $("#passwordFeedback2").attr("class", "invalid");
+                passMatch = false;
+                
+            }
+        });//password2        
+        
+        $("#submitButton").on( "click", function() { 
+            if( nameGood && passGood && passMatch) {
+                let input1 = $("#checkPassword1").val();
+                let input2 = $("#checkPassword2").val(); 
+                if(input1 == input2) {
+                    $("#submitFeedback").html("  Sign up successful");
+                    $("#submitFeedback").attr("class", "valid");                
+                }else{
+                    $("#passwordFeedback2").html(" Passwords do not match");
+                    $("#passwordFeedback2").attr("class", "invalid");
+                    passMatch = false;                    
+                    $("#submitFeedback").html("  Sign up incomplete");
+                    $("#submitFeedback").attr("class", "invalid");                
+                }
+            
+                
+            }if(!nameGood){
+                let nameInput = $("#username").val();
+                $("#nameFeedback").html(" Username is unavailable");
+                $("#nameFeedback").attr("class", "invalid");
+                $("#submitFeedback").html("  Sign up incomplete");
+                $("#submitFeedback").attr("class", "invalid");            
+                
+                if(nameInput.length < 1){
+                    $("#nameFeedback").html(" Username is required");
+                    $("#nameFeedback").attr("class", "invalid");
+                }            
+                
+            }if(!passGood){
+                $("#passwordFeedback1").html(" Password must have at least 6 characters");
+                $("#passwordFeedback1").attr("class", "invalid");
+                $("#submitFeedback").html("  Sign up incomplete");
+                $("#submitFeedback").attr("class", "invalid");            
+            }
+        
+            
+        }); //submit
+        
     } ); //document.ready()
     
         
@@ -78,37 +188,91 @@
 </head>
 <body>
 
-<h1> Sign Up Form </h1>
-
-        <fieldset>
-        <legend>Sign Up</legend>
-        First Name: <input type="text"><br> 
-        Last Name: <input type="text"><br> 
-        Email: <input type="text"><br> 
-        Phone Number:<input type="text"><br><br>
-        Zip Code: <input type="text" id="zipCode"><span id = "badZip"></span><br>
-        City: <span id="city"></span>
-        <br>
-        Latitude: <span id="latitude"></span>
-        <br>
-        Longitude: <span id="longitude"></span>
-        <br><br>
-        State: 
-        <select id="state">
-           <option> Select One </option> 
-           <option value="ca"> California </option>
-           <option value="ny"> New York </option>
-           <option value="tx"> Texas </option>
-        </select>
-        <br>
-        
-        Select a County: <select id="county"></select><br>
-        
-        Desired Username: <input type="text"><br>
-        Password: <input type="password"><br>
-        Type Password Again: <input type="password"><br>
-        <input type="submit" value="Sign up!">
-        </fieldset>
-
+<h1 id = "header" class = "jumbotron"> Sign Up Form </h1>
+    <fieldset>
+    <div id = "main">  
+        <div class="col-xs-3">        
+            <h3 id = "info">Personal Info</h3>
+            First Name: <input class="form-control" type="text"><br> 
+            Last Name: <input class="form-control" type="text"><br> 
+            Email: <input class="form-control" type="text"><br> 
+            Phone Number:<input class="form-control" type="text"><br><br>
+        </div>    
+        <div class="col-xs-3">
+            <h3 id = "location">Location</h3>
+            Zip Code: <input type="text" id="zipCode" class="form-control"><span id = "badZip" class = invalid></span><br>
+            City: <span id="city" class = valid ></span>
+            <br>
+            Latitude: <span id="latitude"class = valid ></span>
+            <br>
+            Longitude: <span id="longitude" class = valid ></span>
+            <br><br>
+            State: 
+            <select id="state">
+                <option> Select One </option> 
+                <option value="al"> Alabama </option>
+                <option value="ak"> Alaska </option>
+                <option value="az"> Arizona </option>
+                <option value="ar"> Arkansas </option>
+                <option value="ca"> California </option>
+                <option value="co"> Colorado </option>                
+                <option value="ct"> Connecticut </option>
+                <option value="de"> Delaware </option>
+                <option value="fl"> Florida </option>
+                <option value="ga"> Georgia </option>
+                <option value="hi"> Hawaii </option>
+                <option value="id"> Idaho </option>
+                <option value="il"> Illinois </option>
+                <option value="in"> Indiana </option>               
+                <option value="ia"> Iowa </option>
+                <option value="ks"> Kansas </option>
+                <option value="ky"> Kentucky </option>                
+                <option value="la"> Louisiana </option>
+                <option value="me"> Maine </option>
+                <option value="md"> Maryland </option>
+                <option value="ma"> Massachusetts </option>
+                <option value="mi"> Michigan </option>
+                <option value="mn"> Minnesota </option>
+                <option value="ms"> Mississippi </option>
+                <option value="mo"> Missouri </option>                
+                <option value="mt"> Montana </option>
+                <option value="ne"> Nebraska </option>
+                <option value="nv"> Nevada </option>
+                <option value="nh"> New Hampshire </option>
+                <option value="nj"> New Jersey </option>
+                <option value="nm"> New Mexico </option>
+                <option value="ny"> New York </option>
+                <option value="nc"> North Carolina </option>               
+                <option value="nd"> North Dakota </option>
+                <option value="oh"> Ohio </option>
+                <option value="ok"> Oklahoma </option>                
+                <option value="or"> Oregon </option>
+                <option value="pa"> Pennsylvania </option>
+                <option value="ri"> Rhode Island </option>
+                <option value="sc"> South Carolina </option>
+                <option value="sd"> South Dakota </option>
+                <option value="tn"> Tennessee </option>
+                <option value="tx"> Texas </option>
+                <option value="ut"> Utah </option>
+                <option value="vt"> Vermont </option>               
+                <option value="va"> Virginia </option>                
+                <option value="wa"> Washington </option>
+                <option value="wv"> West Virginia </option>
+                <option value="wi"> Wisconsin </option>                
+                <option value="wy"> Wyoming </option>
+            </select>
+            <br>
+            Select a County: <select id="county"></select><br>
+        </div>    
+        <div class="col-xs-3">    
+        <h3 id ="user_info">Account</h3>
+            Desired Username: <input id = "username" type="text" class="form-control"><span id = "nameFeedback"></span><br>
+            Password: <input id = "checkPassword1" type="password" class="form-control"><span id = "passwordFeedback1"></span><br>
+            Type Password Again: <input id = "checkPassword2" type="password" class="form-control"><span id = "passwordFeedback2"></span><br>
+            <br>
+            <input id = "submitButton" type="submit" class="btn btn-info btn-lg" value="Sign up!"><span id = "submitFeedback"></span>
+        </div>  
+    </div>
+    </fieldset>
 </body>
 </html>

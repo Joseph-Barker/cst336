@@ -12,9 +12,9 @@ border-radius: 20px;
 }
 </style>
 <script>
-
+let count = 0;
 function searchImage() {
-
+count++;
 $.ajax({
 type: "GET",
 url: "https://pixabay.com/api/?key=5589438-47a0bca778bf23fc2e8c5bf3e",
@@ -23,10 +23,9 @@ data: { "q":$("#keyword").val() },
 success: function(data, status) {
 let randomImage = Math.floor(Math.random() * data.hits.length);
 $('#image').html("<img src='"+ data.hits[ randomImage ].webformatURL+"' width='500'>");
-$('#image').append("<br>Likes: " + data.hits[ randomImage ].likes)
+$('#image').append("<br>Likes: " + data.hits[ randomImage ].likes + " Count: " + count)
 }
 }); //ajax 
-
 }//searchImage()
 
 </script>

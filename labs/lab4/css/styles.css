@@ -1,0 +1,41 @@
+#header {
+    text-align:center;
+}
+
+#info{
+    color: #009CFF;
+}
+
+#location{
+    color: #009CFF;
+}
+
+#user_info{
+    color: #009CFF;
+}
+
+.invalid  {
+    color: red;    
+}
+
+.valid {
+    color: green;
+} 
+
+#collHeader {
+    padding-left:60px;
+}
+
+.jumbotron{
+    background-color:#009CFF;
+    color:white; 
+}
+
+.btn{
+ background-color:#009CFF;
+}
+
+#main{
+    width: 1400px; /*1400 */
+    margin: 0 auto; 
+}
