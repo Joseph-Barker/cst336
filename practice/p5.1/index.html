@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Practice 5: Like/Dislike Video App</title>
+  <script src="https://code.jquery.com/jquery-3.1.0.js"></script>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<script>
+  /* global $ */
+  function likeClicked(){
+    $("#like").css("display", "none");
+    $("#greyedLike").css("display", "inline");
+    $("#greyedLike").html("<img src='img/cancel_like.png' alt='Greyed Out Like button' width='35' />");
+    $.ajax({
+            type: "get",
+            url:  "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php",
+            dataType: "json",
+            data: { "videoId": "G3Fc_eOkM8M", "action": "like" },  //   <----AS THE VALUE, ENTER THE YOUTUBE VIDEO ID
+            success: function(data,status) {
+              $("#likes").html(data.likes);
+              },
+              complete: function(data,status) { 
+                  //alert(status);
+              }
+         });
+  }
+  
+  function hideLike(){
+    $("#greyedLike").css("display", "none");
+    $("#like").css("display", "inline");
+    $("#like").html("<img src='img/like.png' alt='Like button' width='35' />");
+    $.ajax({
+            type: "get",
+            url:  "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php",
+            dataType: "json",
+            data: { "videoId": "G3Fc_eOkM8M", "action": "cancel_like" },  //   <----AS THE VALUE, ENTER THE YOUTUBE VIDEO ID
+            success: function(data,status) {
+              $("#likes").html(data.likes);
+              },
+              complete: function(data,status) { 
+                  //alert(status);
+              }
+         });
+  }
+  
+  function dislikeClicked(){
+    $("#dislike").css("display", "none");
+    $("#greyedDislike").css("display", "inline");
+    $("#greyedDislike").html("<img src='img/cancel_dislike.png' alt='Greyed Out Like button' width='35' />");
+    $.ajax({
+            type: "get",
+            url:  "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php",
+            dataType: "json",
+            data: { "videoId": "G3Fc_eOkM8M", "action": "dislike" },  //   <----AS THE VALUE, ENTER THE YOUTUBE VIDEO ID
+            success: function(data,status) {
+              $("#dislikes").html(data.dislikes);
+              },
+              complete: function(data,status) { 
+                  //alert(status);
+              }
+         });
+  }
+  
+  function hideDislike(){
+    $("#greyedDislike").css("display", "none");
+    $("#dislike").css("display", "inline");
+    $("#dislike").html("<img src='img/dislike.png' alt='Dislike button' width='35' />");
+    $.ajax({
+            type: "get",
+            url:  "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php",
+            dataType: "json",
+            data: { "videoId": "G3Fc_eOkM8M", "action": "cancel_dislike" },  //   <----AS THE VALUE, ENTER THE YOUTUBE VIDEO ID
+            success: function(data,status) {
+              $("#dislikes").html(data.dislikes);
+              },
+              complete: function(data,status) { 
+                  //alert(status);
+              }
+         });
+  }
+  
+  function getComments(){
+    $.ajax({
+            type: "get",
+            url:  "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php",
+            dataType: "json",
+            data: { "videoId": "G3Fc_eOkM8M", "action": "comments" },  //   <----AS THE VALUE, ENTER THE YOUTUBE VIDEO ID
+            success: function(data,status) {
+                $("#author").html(data[0].author);
+                $("#date").html(data[0].date);
+                $("#comment").html(data[0].comment);
+                
+                $("#author2").html(data[1].author);
+                $("#date2").html(data[1].date);
+                $("#comment2").html(data[1].comment);
+              },
+              complete: function(data,status) { 
+                  //alert(status);
+              }
+         });
+  }
+</script>
+<body>
+
+  <!--Embed here any YouTube video using the "iframe" tag -->
+  <iframe width="1280" height="720" src="https://www.youtube.com/embed/G3Fc_eOkM8M" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  
+  <div id="row">
+    <div class="col">
+      <button id="comments" onclick='getComments()'>
+        Get Comments!
+      </button>
+    </div>
+    <div class="col2">
+      <button id="like" onclick='likeClicked()'>
+        <img src="img/like.png" alt="Like button" width="35" />
+      </button>
+      
+      <button id="greyedLike" onclick='hideLike()'>
+      </button>
+      
+        <!--The number of likes is displayed within the span below-->
+      <span id="likes"></span>
+      
+      <button id="dislike" onclick='dislikeClicked()'>
+        <img src="img/dislike.png" alt="Dislike button" width="35" />
+      </button>
+      
+      <button id="greyedDislike" onclick='hideDislike()'>
+      </button>
+      
+      <span id="dislikes"></span>
+    </div>
+  </div>
+  <div id="col3">
+    <span id="author"></span>
+    <span id="date"></span>
+    <div id="comment"></div>
+    
+    <br>
+    
+    <span id="author2"></span>
+    <span id="date2"></span>
+    <div id="comment2"></div>
+  </div>
+
+</body>
+<script>
+
+  //This AJAX call returns a number of "likes" and "dislikes"
+  //Enter a YouTube video id for "data".
+	$.ajax({
+            type: "get",
+            url:  "https://cst336.herokuapp.com/projects/api/videoLikesAPI.php",
+            dataType: "json",
+            data: { "videoId": "G3Fc_eOkM8M" },  //   <----AS THE VALUE, ENTER THE YOUTUBE VIDEO ID
+            success: function(data,status) {
+                 $("#likes").html(data.likes);
+                 $("#dislikes").html(data.dislikes);
+              },
+              complete: function(data,status) { 
+                  //alert(status);
+              }
+         });
+	
+</script>
+</html>

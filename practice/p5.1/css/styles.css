@@ -1,0 +1,18 @@
+#greyedLike, #greyedDislike {
+    display: none;
+}
+#row {
+    display: flex;
+}
+.col2{
+    padding-left: 1000px;
+}
+.col3{
+    display: flex;
+}
+#author, #author2 {
+    font-weight: bold;
+}
+#date, #date2 {
+    font-style: italic;
+}
