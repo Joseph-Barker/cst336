@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> OtterMart Product Search </title>
+       <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--Custom Styles-->        
+        <link rel="stylesheet" href="css/styles.css">   
+        <script>
+            /*global $*/
+            $(document).ready(function(){
+                
+                $.ajax({
+                    type: "GET",
+                    url: "api/getCategories.php",
+                    dataType: "json",
+                    success: function(data,status) {
+                        data.forEach(function(key) {
+                             $("#categories").append("<option value=" + key["catId"] + ">" + key["catName"] + "</option>");
+                        });    
+                    }
+                });//ajax for getCategories dropdown
+            
+                $("#searchForm").on("click", function(){
+                    $.ajax({
+                        type: "GET",
+                        url: "api/getSearchResults.php",
+                        dataType: "json",
+                        data: {
+                            "product" : $("[name=product]").val(),
+                            "category" : $("[name=category]").val(),
+                            "priceFrom" : $("[name=priceFrom]").val(),
+                            "priceTo" : $("[name=priceTo]").val(),
+                            "orderBy" : $("[name=orderBy]:checked").val()
+                        },
+                        success: function(data, status) {
+                            $("#results").html("<h3> Products Found: </h3>");
+                            data.forEach(function(key) {
+                                $("#results").append(key['productName'] + " " +  key['productDescription'] + " $" + key['price'] + "<br>");
+                            });
+                        }
+                    });        
+                });// End searchForm
+            
+            });// End $(document).ready()
+        </script>
+    
+    </head>
+    <body>
+        
+        <div>
+            <h1 class="jumbotron"> OtterMart Product Serch </h1>
+        
+            <form>
+                Product: <input id = "test"  type = "text" name = "product" />
+                <br>
+                Category: <select id="categories" name = "category">
+                    <option value = ""> Select One </option>
+                    </select>
+                <br>
+                Price:  From <input type="text" name="priceFrom" size="7"/>
+                        To <input type="text" name="priceTo" size="7"/>
+                <br>
+                Order result by:
+                <br>
+                
+                <input type="radio" name="orderBy" value="price"/> Price <br>
+                <input type="radio" name="orderBy" value="name"/> Name <br>
+                
+                <br>
+            </form>
+            <button id = "searchForm" > Search </button>
+        
+        <br />    
+        </div>
+        <br>
+        <hr>
+        <div id = "results"></div>
+        
+        <div class= class="modal" tabindex="-1" role = "dialog" >
+            <div class = "modal-dialog" role = "document">
+                <div class = "modal-content">
+                    <div class = "modal-content">
+                        <div class = "modal-header">
+                            <h5 class = "modal-title">Modal title</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden = "true"> &times; </span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <p>Modal body text gose here.</p>
+                        </div class = "modal-footer">
+                            <button type= "button" class = "btn btn-secondary" data-dismiss= "modal">Close</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </body>
+</html>

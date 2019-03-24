@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> </title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <script>
+            /*global $*/
+            let total = 0;
+            $(document).ready(function() {     
+                            $.ajax({
+                
+                                type: "GET",
+                                url: "api/api.php",
+                                dataType: "json",
+                                //data: { "": },
+                                success: function(data,status) {
+                                //alert(data.product);
+                                $("#product").html(data.product);
+                                $("#unitPrice").html(data.price);
+                                $("#quantity").html(data.qty);
+                                $("#total").html("$" + data.price * data.qty)
+                                    
+                                },
+                                complete: function(data,status) { //optional, used for debugging purposes
+                                //alert(status);
+                                }
+                            });//ajax
+                    });         
+        </script>
+    </head>
+    <body>
+            <h1 class="jumbotron"> Discount Shopping!</h1>
+    <div id = "main" >
+        <table>
+        <tr>
+            <th>Product</th>
+            <th>Unit Price</th>
+            <th> Quantity </th>
+            <th>Total</th>
+        </tr>
+        <tr>
+            <td id = "product"></td>
+            <td id = "unitPrice"></td>
+            <td id = "quantity"></td>
+            <td id = "total"></td>
+        </tr>
+    
+       <tr>
+            <td>Discont</td>
+            <td></td>
+            <td id = "discount"></td>
+            <td></td>
+            <td></td>
+        </tr>    
+        
+        <tr>
+            <td>Subtotal</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    
+       <tr>
+            <td>Tax (10%)</td>
+            <td></td>
+            <td></td>
+            <td id="shipping"></td>
+        </tr>    
+            
+        <tr>
+            <td>Total</td>
+            <td></td>
+            <td></td>
+            <td id="subtotal"></td>
+        </tr>             
+            
+        </table>
+</div>        
+    </body>
+</html>
