@@ -971,3 +971,75 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getSearchResults.php(43): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getSearchResults.php on line 43
+[26-Mar-2019 03:39:15 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 16
+[26-Mar-2019 03:39:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 16
+[26-Mar-2019 03:45:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 16
+[26-Mar-2019 03:45:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 16
+[26-Mar-2019 03:47:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 16
+[26-Mar-2019 03:50:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 16
+[26-Mar-2019 03:59:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 16
+[26-Mar-2019 04:00:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 16
+[26-Mar-2019 04:04:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'SELELCT * 
+            FROM om_product
+            NATURAL JOIN om_purchase
+    ' at line 1' in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab6.3/api/getPurchaseHistory.php on line 15

@@ -22,7 +22,7 @@ if(!empty($_GET['category'])) {
 //checks whether user has typed something in the price text boxes
 if (!empty($_GET['priceFrom'])) {
     $sql .= " AND price >= :priceFrom";
-    $namedParameters[":priceFrom"] = $GET['priceFrom'];
+    $namedParameters[":priceFrom"] = $_GET['priceFrom'];
 }
 //checks whther user has typed something in the price text boxes
 if (!empty($_GET['priceTo'])) {
@@ -39,6 +39,7 @@ if (isset($_GET['orderBy'])) {
     }
     
 }
+
 $stmt = $conn->prepare($sql); //$connection MUST be previously initialized
 $stmt->execute($namedParameters); // We NEED to include $namedParameters here
 $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //use fetch for one record, fetchAll for multiple
