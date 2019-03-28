@@ -1,0 +1,48 @@
+body{
+    text-align:center;
+    background-image: url("../img/numbers_bg_dark.jpg");
+    background-size: cover;
+}
+
+.jumbotron {
+    background-color:#99ccff; /*#edf2f9  */
+}
+
+.hud{
+    font-size:30px;
+    color: white;
+}
+
+#viewLearder {
+    color: white;
+}
+
+#directions {
+    background-color:#99ccff;
+    font-size: 2em;    
+    width:900px;
+    height:400px;
+    margin:0 auto;
+    border-radius:20px;
+}
+
+#leaderboard {
+    background-color:#99ccff;
+    font-size: 2em;    
+    width:900px;
+    height:450px;
+    margin:0 auto;
+    border-radius:20px;
+}
+
+#table {
+    text-align: center;
+    width: 400px; /*1400 */
+    margin: 0 auto; 
+
+}
+
+.record {
+    text-align: left;
+    color: white;
+}

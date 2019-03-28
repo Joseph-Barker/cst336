@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Guess a Number </title>
+        <meta charset="utf-8" />
+        <!--Jquery-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <!--Bootstrap files-->        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+        <!--Custom Styles-->        
+        <link rel="stylesheet" href="css/styles.css">
+    </head>
+    
+    <body>
+
+    <div class="jumbotron">
+        <h1>Guess a Number</h1>
+        <div class = "hud">
+            <span id = "wins" >Wins: 0</span>
+            <span id = "losses" >Losses: 0</span>
+            <div >
+                <button class = "btn btn-primary" id = "viewLearder">view leaderboard</button>
+            </div>
+        </div>    
+    </div>
+        
+    <div id="directions" class = "resultParas">
+        Guess a number between 1 and 99 in seven attempts! <br />
+        <label for = "guessField">Enter a guess: </label>
+        <input type = "text" id = "guessField" class = "guessField">
+        <input type = "submit" value = "submit guess" class = "btn btn-success" id = "test">
+
+        <br><br>
+        <p id = "guesses"></p>
+        <p id = "lastResult"></p>
+        <p id = "lowOrHi"></p>
+        <button class = "btn btn-primary" id = "reset">Reset</button>
+    </div>
+    <div id="leaderboard" class = "resultParas">             
+        <br />
+        <h1>Guess a Number Hall of Fame</h1> <br />
+        <table id = "table">
+            <tr>
+                <th>Rank</th>
+                <th>Name</th>
+                <th>Wins</th>
+                <th>Losses</th>
+            </tr>
+            <tr>
+                <td class = "record" id = "Rank1"></td>
+                <td class = "record" id = "Name1"></td>
+                <td class = "record" id = "Wins1"></td>
+                <td class = "record" id = "Losses1"></td>
+            </tr>
+            <tr>
+                <td class = "record" id = "Rank2"></td>
+                <td class = "record" id = "Name2"></td>
+                <td class = "record" id = "Wins2"></td>
+                <td class = "record" id = "Losses2"></td>
+            </tr>
+            <tr>
+                <td class = "record" id = "Rank2"></td>
+                <td class = "record" id = "Name2"></td>
+                <td class = "record" id = "Wins2"></td>
+                <td class = "record" id = "Losses2"></td>
+            </tr>
+            <tr>
+                <td class = "record" id = "Rank3"></td>
+                <td class = "record" id = "Name3"></td>
+                <td class = "record" id = "Wins3"></td>
+                <td class = "record" id = "Losses3"></td>
+            </tr>
+            <tr>
+                <td class = "record" id = "Rank4"></td>
+                <td class = "record" id = "Name4"></td>
+                <td class = "record" id = "Wins4"></td>
+                <td class = "record" id = "Losses4"></td>
+            </tr>
+            <tr>
+                <td class = "record" id = "Rank5"></td>
+                <td class = "record" id = "Name5"></td>
+                <td class = "record" id = "Wins5"></td>
+                <td class = "record" id = "Losses5"></td>
+            </tr>            
+        </table>
+    </div>         
+             <script src = "js/functions.js"></script>  
+    </body>
+</html>
