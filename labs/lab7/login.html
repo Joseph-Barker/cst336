@@ -2,21 +2,74 @@
 <html>
     <head>
         <title> Admin Login Screen </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">        
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <!--Custom Styles-->        
+        <link rel="stylesheet" href="css/styles.css">          
+    <script>
+        /*global $*/
+        /*global localStorage*/
+        let Attempt = 0;
+        let LS_Rec = localStorage.getItem("loginRecord");
+        if (LS_Rec == null) {
+            localStorage.setItem("loginRecord",Attempt);
+        }      
+        
+        $(document).ready( function(){
+            if (LS_Rec  > 0 ) {
+                $("#passwordError").html("Invalid username or password");
+            } else {
+                $("#passwordError").html("");               
+
+            }
+            $("#pw").change(function() {         
+                Attempt++;
+                localStorage.setItem("loginRecord",Attempt);               
+            });       
+            
+        });        
+    </script>
     </head>
     <body>
 
-
-        <form method="POST" action="loginProcess.php">
-            
+    <legend class="jumbotron"> Admin Login </legend>
+        <form id = "body" method="POST" action="loginProcess.php">
             
             Username: <input type="text" name="username" id="username"/> <br/>
+            <br />            
             
-            Password: <input type="password" name="password"/> <br/>
+            Password: <input id = "pw" type="password" name="password"/> <br/>
+            <div id = "passwordError" ></div>
+            <br />            
             
-            <input type="submit" value="Login!" >
+            <!-- <input type="submit" value="Login!" > -->
             
+            <button id = "submitBtn" class="btn btn-primary" type="submit" value="Login!" > Login </button>            
         </form>
-
-
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+        <div id = "footer">
+            <hr width="50%">
+            &copy; 2019. Joseph Barker - CST 336 Internet Programming <br />
+            <strong>Disclaimer:</strong> The content of this page is fake. It's only for educatiol purposes.</strong>
+            <br>
+            <img src="../../img/CSUMB_Logo.jpg" alt = "CSUMB Logo" />
+            <img src="../../img/buddy_verified.png"
+        </div>
+    
     </body>
+
 </html>

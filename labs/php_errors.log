@@ -1,0 +1,10 @@
+[03-Apr-2019 00:08:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productPrice' in 'order clause'' in /home/ubuntu/workspace/cst336/labs/lab7/getProducts.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/getProducts.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/getProducts.php on line 16
+[03-Apr-2019 00:08:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productPrice' in 'order clause'' in /home/ubuntu/workspace/cst336/labs/lab7/getProducts.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/labs/lab7/getProducts.php(16): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/labs/lab7/getProducts.php on line 16

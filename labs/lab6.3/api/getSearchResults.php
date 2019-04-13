@@ -32,7 +32,7 @@ if (!empty($_GET['priceTo'])) {
 //checks if the user has selected a radio button
 if (isset($_GET['orderBy'])) {
     if ($_GET['orderBy'] == "price"){
-        $sql .= " ORDER BY price";
+        $sql .= " ORDER BY productPrice";
     }
     else if($_GET['orderBy'] == "name") {
         $sql .= " ORDER BY productName";

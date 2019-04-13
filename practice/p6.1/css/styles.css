@@ -1,0 +1,12 @@
+body {
+    text-align: center;
+    font-size: 18px;
+}
+table, th, td {
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size: 18px;
+}
+#promoError {
+    font-size: 32px;
+}

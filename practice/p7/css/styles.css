@@ -1,0 +1,26 @@
+/*.center { 
+    margin: auto; 
+    
+}
+
+table, th, td {
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.textCenter {
+    text-align:center;
+}
+
+*/
+
+body {
+    text-align: center;
+    font-size: 18px;
+}
+table, th, td {
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size: 18px;
+}

@@ -1,4 +1,5 @@
 <?php
+    header('Access-Control-Allow-Origin: *');
     include '../../../inc/dbConnection.php';
     $conn = getDatabaseConnection("ottermart");
     $sql = "SELECT catId, catName FROM om_category ORDER BY catName";
