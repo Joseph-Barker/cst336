@@ -1,10 +1,10 @@
 <?php
 
-include '../../../inc/dbConnection.php';
-$conn = getDatabaseConnection("ottermart");
+include '../dbConnection.php';
+$conn = getDatabaseConnection("valid_emails");
 
-$sql = "SELECT * FROM om_product ORDER BY productPrice";
-$stmt = $conn->prepare($sql);  //$connection MUST be previously initialized
+$sql = "SELECT * FROM emails ORDER BY email_address";
+$stmt = $conn -> prepare($sql);  //$connection MUST be previously initialized
 $stmt->execute();
 $records = $stmt->fetchAll(PDO::FETCH_ASSOC); //use fetch for one record, fetchAll for multiple
 

@@ -1,0 +1,302 @@
+[20-Apr-2019 22:31:11 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 21
+[20-Apr-2019 22:31:11 UTC] PHP Stack trace:
+[20-Apr-2019 22:31:11 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[20-Apr-2019 22:31:43 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 21
+[20-Apr-2019 22:31:43 UTC] PHP Stack trace:
+[20-Apr-2019 22:31:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[20-Apr-2019 22:36:49 UTC] PHP Parse error:  syntax error, unexpected 'fba00d66f6d179917a84b71e62dcbf' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 4
+[20-Apr-2019 22:37:25 UTC] PHP Parse error:  syntax error, unexpected 'fba00d66f6d179917a84b71e62dcbf' (T_STRING) in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 4
+[20-Apr-2019 22:39:05 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 21
+[20-Apr-2019 22:39:05 UTC] PHP Stack trace:
+[20-Apr-2019 22:39:05 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[20-Apr-2019 22:40:28 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 18
+[20-Apr-2019 22:40:28 UTC] PHP Stack trace:
+[20-Apr-2019 22:40:28 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[20-Apr-2019 22:41:55 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 19
+[20-Apr-2019 22:41:55 UTC] PHP Stack trace:
+[20-Apr-2019 22:41:55 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[20-Apr-2019 22:42:35 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 19
+[20-Apr-2019 22:42:35 UTC] PHP Stack trace:
+[20-Apr-2019 22:42:35 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[20-Apr-2019 22:42:39 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 19
+[20-Apr-2019 22:42:39 UTC] PHP Stack trace:
+[20-Apr-2019 22:42:39 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[20-Apr-2019 22:42:43 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 19
+[20-Apr-2019 22:42:43 UTC] PHP Stack trace:
+[20-Apr-2019 22:42:43 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[20-Apr-2019 22:43:32 UTC] PHP Catchable fatal error:  Object of class stdClass could not be converted to string in /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php on line 19
+[20-Apr-2019 22:43:32 UTC] PHP Stack trace:
+[20-Apr-2019 22:43:32 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/petfinderAPI.php:0
+[21-Apr-2019 00:47:34 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/test.php on line 24
+[21-Apr-2019 00:47:34 UTC] PHP Stack trace:
+[21-Apr-2019 00:47:34 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/test.php:0
+[21-Apr-2019 00:48:51 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/test.php on line 26
+[21-Apr-2019 00:48:51 UTC] PHP Stack trace:
+[21-Apr-2019 00:48:51 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/test.php:0
+[21-Apr-2019 00:49:24 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/test.php on line 26
+[21-Apr-2019 00:49:24 UTC] PHP Stack trace:
+[21-Apr-2019 00:49:24 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/test.php:0
+[21-Apr-2019 00:49:31 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/test.php on line 26
+[21-Apr-2019 00:49:31 UTC] PHP Stack trace:
+[21-Apr-2019 00:49:31 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/test.php:0
+[21-Apr-2019 00:49:56 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/test.php on line 26
+[21-Apr-2019 00:49:56 UTC] PHP Stack trace:
+[21-Apr-2019 00:49:56 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/test.php:0
+[21-Apr-2019 00:52:41 UTC] PHP Fatal error:  Cannot use object of type stdClass as array in /home/ubuntu/workspace/cst336/hw/hw4/api/test.php on line 26
+[21-Apr-2019 00:52:41 UTC] PHP Stack trace:
+[21-Apr-2019 00:52:41 UTC] PHP   1. {main}() /home/ubuntu/workspace/cst336/hw/hw4/api/test.php:0
+[21-Apr-2019 03:07:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:12:19 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hojgktmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:12:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hojgktmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:12:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hojgktmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:15:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:15:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:15:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:15:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:15:06 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:29 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:31:30 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'cat$gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[21-Apr-2019 03:57:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'coolkid#gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 03:57:48 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'coolkid#gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 03:58:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'coolkid#gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 03:58:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'coolkid#gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 03:58:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'coolkid#gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 03:58:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'coolkid#gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:09:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'coolkid#gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:11:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:11:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:11:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:11:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:11:40 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:11:53 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:28:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test88@hotgfdfgmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 04:32:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'alltoeasy@gmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 05:43:03 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getEmails.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getEmails.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getEmails.php on line 8
+[21-Apr-2019 05:43:14 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/getEmails.php:8
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/getEmails.php(8): PDOStatement->execute()
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/getEmails.php on line 8
+[21-Apr-2019 05:58:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 05:58:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 05:58:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 05:58:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:37:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:38:22 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:38:23 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:38:26 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:38:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:38:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:38:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:38:28 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:38:31 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 06:41:13 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[21-Apr-2019 07:15:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15

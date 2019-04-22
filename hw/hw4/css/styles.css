@@ -1,0 +1,22 @@
+.jumbotron{
+    white-space: pre;
+    background-color:#009CFF;
+    color:white; 
+    text-align:center;
+    font-size:40px; 
+}
+
+#body{
+    margin: 0 auto;     
+    text-align:center;
+}
+
+#email_list{
+    font-size:20px;
+    width: 400px;
+    margin: 0 auto;     
+    text-align:center;
+    background-color:#b9c2ce;
+    color:white;
+    border-radius:10px;
+}
