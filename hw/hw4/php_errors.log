@@ -300,3 +300,128 @@ Stack trace:
 #0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
 #1 {main}
   thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:18:31 UTC] PHP Parse error:  syntax error, unexpected '$arr' (T_VARIABLE) in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 9
+[22-Apr-2019 20:19:42 UTC] PHP Parse error:  syntax error, unexpected '$arr' (T_VARIABLE) in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 9
+[22-Apr-2019 20:21:47 UTC] PHP Parse error:  syntax error, unexpected '$arr' (T_VARIABLE) in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 9
+[22-Apr-2019 20:22:58 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[22-Apr-2019 20:23:21 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[22-Apr-2019 20:23:46 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[22-Apr-2019 20:23:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[22-Apr-2019 20:24:56 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[22-Apr-2019 20:28:49 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[22-Apr-2019 20:28:51 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[22-Apr-2019 20:29:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:16
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(16): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 16
+[22-Apr-2019 20:32:11 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTO `emails` (`email_address`, `status`) VALUES (':email', ':status')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:35:04 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTO `emails` (`email_address`, `status`) VALUES (':email', ':email')' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:36:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:36:18 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:36:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:36:20 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY093]: Invalid parameter number: number of bound variables does not match number of tokens' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:39:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTO `emails` (`email_address`, `status`) VALUES ('test@hotmail.com', 'test@hotm' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:39:09 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTO `emails` (`email_address`, `status`) VALUES ('test@hotmail.com', 'test@hotm' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:41:32 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 12
+[22-Apr-2019 20:41:35 UTC] PHP Parse error:  syntax error, unexpected ':' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 12
+[22-Apr-2019 20:41:59 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[42000]: Syntax error or access violation: 1064 You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'INTO `emails` (`email_address`, `status`) VALUES ( test@hotmail.com,test@hotmail' at line 1' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:57:17 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:58:02 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:59:32 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 20:59:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 21:01:27 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 21:02:07 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15
+[22-Apr-2019 21:06:39 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry 'test3@hotmail.com' for key 'PRIMARY'' in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php:15
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php(15): PDOStatement->execute(Array)
+#1 {main}
+  thrown in /home/ubuntu/workspace/cst336/hw/hw4/api/addEmail.php on line 15

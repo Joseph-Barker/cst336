@@ -4,12 +4,12 @@
     
     $conn = getDatabaseConnection("valid_emails");
 
-    $email = $_GET["email"];
     $arr = array();
+    $arr[":email"] = $_GET["email"];
+    $arr[":status"] = $_GET["status"];    
     
     $arr[":email"] = $_GET["email"];
-    $sql = "INSERT INTO emails (`email_address`) 
-            VALUES (:email)";
+    $sql = "INSERT INTO `emails` (`email_address`, `status`) VALUES (:email, :status)";
                 
     $stmt = $conn->prepare($sql);
     $stmt->execute($arr);

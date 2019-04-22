@@ -75,7 +75,8 @@
                             type: "GET",
                             url: "api/addEmail.php",
                             dataType: "json",
-                            data: {"email": $("#email_input").val() },
+                            data: {"email": $("#email_input").val(),
+                                    "status": $("#email_feedback").text()},
                             success: function(data,status) {
                             
                                 
