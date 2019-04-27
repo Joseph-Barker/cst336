@@ -2,7 +2,13 @@
 <html>
 <head>
 <title> Pixabay API Demo </title>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    
 <style>
 body {
 text-align: center;
@@ -16,7 +22,7 @@ img {
 }
 </style>
 <script>
-
+    /* global $*/
     function searchImage() {
     
         $("#images").html("Loading...");
@@ -37,7 +43,7 @@ img {
                     
                     for (let cols=0; cols < 3; cols++) {
                         
-                      htmlString +=   "<img class='favorite' src='img/favorite.png' width='30'>";
+                      htmlString +=   "<img class='favorite' src='img/favorite.png' height='75' width='70' >";
                        htmlString +=  "<img src='"+ data[i++]+"' width='300' height='280'>";
                         
                     }//for
@@ -64,22 +70,34 @@ img {
             
                 $(this).attr("src","img/favorite_on.png");
                 //add image url to database
-                callFavoriteAPI("add",$(this).next().attr("src"));
+                updateFavorites("add",$(this).next().attr("src"));
             } else {
                 
                 $(this).attr("src","img/favorite.png");
                 //remove image url from database
-                callFavoriteAPI("delete",$(this).next().attr("src"));
+                updateFavorites("delete",$(this).next().attr("src"));
                 
             }
             
         });
     
-        
-        function callFavoriteAPI(action, url, keyword) {
-            
-            
-        }
+        function updateFavorites(action,favorite) {
+                $.ajax({
+                    type: "get",
+                    url: "api/favoritesAPI.php",
+                    dataType: "json",
+                    data: {
+                      "action": action,
+                      "favorite": favorite,
+                      "keyword": $("#keyword").val()
+                    },
+                    success: function(data, status) {
+                    },
+                    complete: function(data, status) { //optional, used for debugging purposes
+                      //alert(status);
+                    }
+                  });//ajax
+            }
     
         
     });//documentReady
@@ -89,10 +107,14 @@ img {
 </head>
 <body>
 
-<h1> Pixabay Image Search </h1>
+<h1 class="jumbotron"> Pixabay Image Search </h1>
 Keyword: <input type="text" id="keyword"/> 
-<button onclick="searchImage()"> Search </button>
+<button onclick="searchImage()" class="btn btn-primary btn-md"> Search </button>
 <br /><br />
+
+<form action="viewFavorites.php">
+    <button class="btn btn-primary btn-md"> View Favorites </button>
+</form>
 
 <div id="images"></div>
 

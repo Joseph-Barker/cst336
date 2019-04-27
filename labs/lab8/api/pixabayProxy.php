@@ -1,7 +1,9 @@
 <?php
 
 //https://pixabay.com/api/?key=5589438-47a0bca778bf23fc2e8c5bf3e&image_type=photo&orientation=horizontal&safesearch=true&per_page=100
+
 $keyword = $_GET['keyword'];
+$apikey = getenv('API_KEY');
 
 $curl = curl_init();
       curl_setopt_array($curl, array(
@@ -21,19 +23,22 @@ curl_close($curl);
 
 //echo $jsonData;
 
-$data = json_decode($jsonData, true); //from JSON format to an Array
+$data = json_decode($jsonData, true);  //from JSON format to an Array
 
 //print_r($data);
 
 $imageURLs = array();
 
 for ($i = 0; $i < 50; $i++) {
-    $imageURLs[] = $data["hits"][$i]["webformatURL"];
+
+  $imageURLs[] = $data["hits"][$i]["webformatURL"];
+  
 }
 
 shuffle($imageURLs);
 
-echo json_encode(array_slice($imageURLs, 0, 9));
+echo json_encode(array_slice($imageURLs, 0, 9)); 
 
+//print_r($imageURLs);
 
 ?>
