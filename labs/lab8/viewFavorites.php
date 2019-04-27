@@ -60,7 +60,7 @@
                 dataType: "json",
                 data: { "action": "keyword" },
                 success: function(data,status) {
-                    $("#keywords").html(" |");
+                    $("#keywords").html("| ");
                     data.forEach(function(keywords){
                         
                         $("#keywords").append("<a onclick='displayFavorites(this)' href='#'>" + keywords.keyword  +"</a> " + " | ");
