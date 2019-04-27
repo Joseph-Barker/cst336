@@ -21,7 +21,7 @@
                             $sql = "SELECT DISTINCT keyword FROM lab8_pixabay";
                         break;
         case "favorites": //display favorite images based on the keyword 
-                        $sql = "SELECT imageURL FROM lab8_pixabay WHERE keyword = :keyword";
+                        $sql = "SELECT DISTINCT(imageURL) FROM lab8_pixabay WHERE keyword = :keyword";
                         $np[':keyword'] = $_GET['keyword'];
                         break;
                         
