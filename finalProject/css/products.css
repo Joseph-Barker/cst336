@@ -1,0 +1,31 @@
+table, th, td, tr {
+  border: none;
+}
+
+table {
+  margin: 0 auto;
+}
+
+th {
+  text-align: center;
+  font-size: 1.4em;
+}
+
+td {
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+.add{
+    width: 120px
+}
+
+.productImg {
+  border-radius: 20px;
+}
+
+.purchaseLink {
+  text-decoration: none;
+  font-size: 1.2em;
+  color: #DC143C;
+}

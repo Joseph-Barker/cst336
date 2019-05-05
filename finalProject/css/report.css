@@ -1,0 +1,46 @@
+/* Body/Universal CSS begin */
+body {
+  font-family: 'Alike Angular', serif;
+  font-size: 16px;
+  background-image: url(../img/background.png);
+}
+
+/* Reports CSS begin */
+#repTable {
+    text-align: center;
+    font-size: 18px;
+  
+}
+
+table, th, td {
+    margin: 0 auto;
+    border: 1px solid black;
+    font-size: 18px;
+    padding: 12px;
+}
+
+#header {
+    text-align: center;
+    font-size: 25px;
+}
+
+#totalRev {
+  text-align: center;  
+}
+
+#totalItems {
+  text-align: center;  
+}
+
+#summary{
+    font-size:20px;
+    width: 400px;
+    margin: 0 auto;     
+    text-align:center;
+    background-color:#D09A58;
+    border-radius:10px;
+}
+
+.jumbotron {
+    background-color: #D09A58;
+}

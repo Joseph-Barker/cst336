@@ -1,0 +1,81 @@
+/* Body/Universal CSS begin */
+body {
+  font-family: 'Alike Angular', serif;
+  font-size: 16px;
+  background-image: url(../img/background.png);
+}
+
+.banner {
+  text-align: center;
+  background-color: #000000;
+}
+
+/* Navigation bar CSS begin */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFEFD5;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #B22222;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px
+}
+
+li a:hover {
+  background-color: #FF6347;
+}
+
+.active {
+  color: #26c79f;
+}
+
+/* Container CSS begin */
+.container {
+    display: block;
+    text-align: center;
+}
+
+/* Catalog CSS begin */
+#searchParam {
+  display: inline-block; 
+  text-align: left;
+  border-radius: 25px;
+  background: #F5F5DC;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+#catalogHead {
+  text-align: center;
+}
+
+.paramCont {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#results {
+  margin: 10px;
+}
+
+.title {
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+}
+
+/* Cart CSS begin */
+#cartEmpty {
+  font-size: 3em;
+}

@@ -1,0 +1,55 @@
+/* Body/Universal CSS begin */
+body {
+  font-family: 'Alike Angular', serif;
+  font-size: 16px;
+  background-image: url(../img/background.png);
+  text-align: center;
+}
+
+/* Navigation bar CSS begin */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #FFEFD5;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: #B22222;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 24px
+}
+
+li a:hover {
+  background-color: #FF6347;
+}
+
+.active {
+  color: #26c79f;
+}
+
+/* Container CSS begin */
+.container {
+  text-align: center;
+}
+
+
+
+/* Other CSS */
+.jumbotron {
+    background-image: url(../img/lateralSword.png);
+    background-position: center, center;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-color: #D6E6FF;
+    color: white;
+    font-size: 25px;
+}

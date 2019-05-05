@@ -1,0 +1,24 @@
+[01-May-2019 02:57:24 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'final_project'' in /home/ubuntu/workspace/cst336/finalProject/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/finalProject/api/getProduct.php(4): getDatabaseConnection('final_project')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/dbConnection.php on line 20
+[01-May-2019 02:57:34 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'final_project'' in /home/ubuntu/workspace/cst336/finalProject/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/finalProject/api/getProduct.php(4): getDatabaseConnection('final_project')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/dbConnection.php on line 20
+[01-May-2019 02:57:35 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'final_project'' in /home/ubuntu/workspace/cst336/finalProject/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/finalProject/api/getProduct.php(4): getDatabaseConnection('final_project')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/dbConnection.php on line 20
+[01-May-2019 02:57:36 UTC] PHP Fatal error:  Uncaught exception 'PDOException' with message 'SQLSTATE[HY000] [1049] Unknown database 'final_project'' in /home/ubuntu/workspace/cst336/finalProject/dbConnection.php:20
+Stack trace:
+#0 /home/ubuntu/workspace/cst336/finalProject/dbConnection.php(20): PDO->__construct('mysql:host=loca...', 'root', '')
+#1 /home/ubuntu/workspace/cst336/finalProject/api/getProduct.php(4): getDatabaseConnection('final_project')
+#2 {main}
+  thrown in /home/ubuntu/workspace/cst336/finalProject/dbConnection.php on line 20

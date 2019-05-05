@@ -1,0 +1,40 @@
+body {
+    font-family: 'Alike Angular', serif;
+    font-size: 16px;
+    background-image: url(../img/background.png);
+    text-align: center;
+}
+.row  { 
+    display:flex;
+    justify-content:center;
+    text-align: left;
+}
+.col1 { 
+    width:350px; 
+}
+.col2 {
+    width: 100px;
+}
+form { 
+    display: inline-block; 
+    text-align:center;
+}
+#products {
+    margin: 35px;
+}
+.jumbotron {
+    background-color: #D09A58;
+    font-size: 25px;
+}
+a {
+    color: #AD8D2B;
+}
+.btn-warning {
+    color: white;
+    background-color: #D09A58;
+}
+
+.btn-primary {
+    color: green;
+    background-color: #E68524;
+}

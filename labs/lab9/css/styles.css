@@ -1,0 +1,39 @@
+.jumbotron{
+    white-space:pre;
+    background-color:#009CFF;
+    color:white; 
+    text-align:center;
+    font-size:40px; 
+}
+
+#body{
+    width:450px;
+    height:150px;
+    margin: 0 auto;     
+    text-align:center;
+    overflow:hidden;
+    padding-right:.5em;
+}
+
+#footer{
+    margin: 0 auto;     
+    text-align:center;
+}
+
+#gallery{
+    width:1000px;
+    height: 400px;
+    margin: 0 auto;     
+    text-align:center;
+}
+
+#inputB{
+    float:right
+}
+
+#upload{
+    width:100%;    
+}
+#feedback{
+    color: red;
+}
